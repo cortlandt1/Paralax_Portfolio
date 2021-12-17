@@ -62,7 +62,55 @@ body {
     color: black;  
     font-size: 20px; 
     letter-spacing: 3px; 
+  
 }
+
+.header-element-title-1 {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	/* line-height: 2; */
+	font-size: 20px;
+	font-family: verdana;
+	letter-spacing: 4px;
+}
+
+span::after {
+    content: '';
+	position: absolute;
+	width: 0px;
+	height: 8px;
+	background: transparent;
+    transition: 0.5s;
+    
+}
+
+span::after {
+    bottom: 20px;
+    border-bottom: 2px solid rgb(22, 54, 102);
+    
+}
+
+p:hover span::after
+ {
+	width: calc( 135px );
+	/* height: calc( 50px / 2); */
+}
+p:hover .span2::after
+ {
+	width: calc( 130px );
+	/* height: calc( 50px / 2); */
+}
+p:hover .span3::after
+ {
+	width: calc( 90px );
+	/* height: calc( 50px / 2); */
+}
+
 
 /* NAV CONTENT */
 .nav {
@@ -100,6 +148,36 @@ button:hover {
     transition: 1.0s;
 }
 
+/* SCROLL ICON */
+
+.scroll{
+    float: right;
+    position: relative;
+    z-index: 99;
+    margin: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Hanuman', serif;
+}
+
+.scroll-element {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.scroll-element-icon {
+    position: absolute;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    color: black;
+}
 
 /* PARALAX CONTENT */
 
@@ -124,7 +202,7 @@ button:hover {
 }
 
 #art_layer_1 {
-    background-image: url(./assets/moutain_paralax_group/layer_1.png)
+    background-image: url(./assets/moutain_paralax_group/layer_1_redo.png)
 }
 #art_layer_2 {
     background-image: url(./assets/moutain_paralax_group/layer_2.png)

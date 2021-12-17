@@ -1,6 +1,6 @@
 
 
-	
+
 /*
 	$(window).scroll(function(){
 		var windowScroll = $(window).scrollTop();
@@ -20,20 +20,20 @@
 	});
 
 */
-	window.addEventListener("scroll", function(event){
+window.addEventListener("scroll", function (event) {
 
-		var top = this.pageYOffset;
+	var top = this.pageYOffset;
 
-		var layers = document.getElementsByClassName("parallax");
-		var layer, speed, yPosition;
-		for (var i = 0; i < layers.length; i++) {
-			layer = layers[i];
-			speed = layer.getAttribute('data-speed');
-			var yPosition = -(top * speed / 100);
-			layer.setAttribute('style', 'transform: translate3d(0px, ' + yPosition + 'px, 0px)');
+	var layers = document.getElementsByClassName("parallax");
+	var layer, speed, yPosition;
+	for (var i = 0; i < layers.length; i++) {
+		layer = layers[i];
+		speed = layer.getAttribute('data-speed');
+		var yPosition = -(top * speed / 100);
+		layer.setAttribute('style', 'transform: translate3d(0px, ' + yPosition + 'px, 0px)');
 
-		}
-	});
+	}
+});
 
 
 
@@ -62,7 +62,7 @@
 // 	{
 // 		dispelParallax();
 // 	}
-	
+
 // 	else if (platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1)
 // 	{
 // 		castParallax();					
@@ -71,7 +71,7 @@
 // 			//castSmoothScroll();
 // 		}
 // 	}
-	
+
 // 	else
 // 	{
 // 		castParallax();
@@ -80,3 +80,12 @@
 // }
 
 // document.body.onload = startSite();
+
+
+// 	document.getElementsByClassName('scroll-element-icon').animate([
+// 		{ transform: 'translateY(0px)' },
+//   { transform: 'translateY(-300px)' }
+// 	], {
+// 		duration: 1000,
+// 		iterations: Infinity
+// 	})
