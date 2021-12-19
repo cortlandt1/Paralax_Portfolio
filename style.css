@@ -96,11 +96,30 @@ body {
 .github-icon {
     height: 22px;
     width: 22px;
+    position: fixed;
+}
+
+.github-icon:hover {
+    /* height: 24px;
+    width: 24px; */
+    transform: scale(1.1);
+    transition: 2s;
 }
 
 .arrow {
-    height: 400px;
-    width: 400px;
+    height: 175px;
+    width: 250px;
+}
+
+.container-arrow-icon {
+    z-index: 98;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 span::after {
