@@ -263,9 +263,46 @@ button:hover {
     background-image: url(./assets/moutain_paralax_group/layer_6.png)
 }
 
-.test{
+.main-container{
     height: 1000px;
     background: linear-gradient(0deg, rgb(0, 0, 0) 17%, rgba(20,19,43,1) 100%);
     position: relative;
     z-index: 98;
 }
+
+.grid-container-projects{
+    display: grid;
+    grid-template-columns: auto auto ;
+    height: 600px;
+    width: 800px;
+    border: solid 0.5px white;
+    position: absolute;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.grid-item-1 {
+    /* border: solid 0.5px white; */
+    max-width: 400px;
+}
+.grid-item-1:hover {
+    
+    filter: hue-rotate(10deg)
+}
+.grid-item-2 {
+    /* border: solid 0.5px white; */
+    max-width: 400px;
+}
+.grid-item-3 {
+    /* border: solid 0.5px white; */
+    max-width: 400px; 
+}
+.grid-item-4 {
+    /* border: solid 0.5px white; */
+    max-width: 400px;  
+}
+
